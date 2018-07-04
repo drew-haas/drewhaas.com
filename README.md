@@ -1,5 +1,7 @@
 # drewhaas.com
 
+Current Link: https://drew-haas.github.io/drewhaas.com/
+
 A work in progress for my new personal website located at:
 http://drewhaas.com/
 
