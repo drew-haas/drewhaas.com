@@ -1,0 +1,156 @@
+body, html {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: $gray;
+    color: $gray-light;
+    font-family: 'futura_bk_btbook';
+}
+
+*::selection {
+    background-color: #fff;
+    color: #fff;
+}
+
+h1 {
+    font-family: 'bebas_neuebold';
+    font-size: 80px;
+    letter-spacing: 2px;
+    line-height: 1;
+    font-style: italic;
+    text-transform: uppercase;
+}
+
+section {
+    width: 100%;
+    height: 100%;
+}
+
+// broken section
+.section-broken-tv {
+    .tv-container {
+        position: relative;
+        width: calc(100% - 30px);
+        height: calc(100% - 30px);
+        border-radius: 5px;
+        margin: 0 auto;
+        top: 50%;
+        transform: translateY(-50%);
+        overflow: hidden;
+
+        .row {
+            width: 100%;
+            display: flex;
+
+            > div {
+                flex: 1;
+            }
+        }
+
+        .row-1 {
+            height: 68%;
+        }
+
+        .row-2 {
+            height: 8%;
+        }
+
+        .row-3 {
+            height: 12%;
+
+            .left-side {
+                background: linear-gradient(to right, rgba(255,255,255,1) 0%, rgba(181,181,181,1) 42%, rgba(0,0,0,1) 100%);
+            }
+            .right-side {
+                background: linear-gradient(to right, rgba(255,255,255,1) 0%, rgba(181,181,181,1) 42%, rgba(0,0,0,1) 100%);
+            }
+        }
+
+        .row-4 {
+            height: 12%;
+        }
+
+        .gray { background-color: #ccc; }
+        .yellow { background-color: #FEFE1A; }
+        .teal { background-color: #0BFFFF; }
+        .green { background-color: #14FA13; }
+        .pink { background-color: #F525F3; }
+        .red { background-color: #DE0301; }
+        .blue { background-color: #0404DE; }
+        .black { background-color: #000; }
+        .white { background-color: #eee; }
+        .grey1 { background-color: #eee; }
+        .grey2 { background-color: #ddd; }
+        .grey3 { background-color: #ccc; }
+        .grey4 { background-color: #bbb; }
+        .grey5 { background-color: #aaa; }
+        .grey6 { background-color: #999; }
+        .grey7 { background-color: #888; }
+        .grey8 { background-color: #777; }
+        .grey9 { background-color: #666; }
+        .grey10 { background-color: #555; }
+        .grey11 { background-color: #444; }
+        .grey12 { background-color: #333; }
+        .grey13 { background-color: #222; }
+        .grey14 { background-color: #111; }
+        .grey15 { background-color: #000; }
+    }
+}
+
+// Contact Section
+.section-contact {
+    position: relative;
+
+    .copy {
+        padding: 20px;
+
+        h2, p {
+            padding-left: 24px;
+            line-height: 1;
+        }
+    }
+
+    .social {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 100%;
+        text-align: center;
+
+        @media screen and (max-width: 580px) {
+            top: auto;
+            bottom: 20px;
+            transform: translate(-50%, 0);
+        }
+
+        .icon {
+            width: 40px;
+            height: 40px;
+            display: inline-block;
+            margin-right: 15px;
+
+            &:last-of-type {
+                margin-right: 0;
+            }
+
+            &:hover {
+                path {
+                    fill: #fff;
+                    transition: fill .3s;
+                }
+            }
+
+            svg {
+                width: 80%;
+                height: 80%;
+            }
+
+            path {
+                fill: $gray-light;
+                transition: fill .3s;
+            }
+        }
+    }
+}
