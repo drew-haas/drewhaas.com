@@ -31,7 +31,10 @@ const config = {
 			'./src/scripts/global.js'
 		],
 		modules: [
-		'node_modules/jquery/dist/jquery.js'
+			'node_modules/jquery/dist/jquery.js',
+			'./src/scripts/ScrollMagic.min.js',
+			'./src/scripts/debug.addindicators.min.js',
+			'./src/scripts/TimelineMax.min.js'
 		],
 		destination: './dist'
 	},

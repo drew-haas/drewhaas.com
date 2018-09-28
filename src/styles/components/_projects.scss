@@ -1,0 +1,199 @@
+.project-grid {
+    width: 100%;
+    max-width: 1000px;
+    margin: $gutter-lg auto 0;
+    overflow: auto;
+
+    .project-item {
+        display: inline-block;
+        max-width: 160px;
+        cursor: pointer;
+
+        img {
+            filter: grayscale(100%);
+            width: 100%;
+            opacity: .3;
+            transition: .6s;
+        }
+
+        &-copy {
+            position: absolute;
+            bottom: $gutter-sm;
+            left: $gutter-sm;
+        }
+
+        &:hover, &:focus {
+            img {
+                opacity: 1;
+                filter: grayscale(0%);
+                transition: .6s;
+            }
+        }
+
+        h3 {
+            margin: 0;
+            line-height: 1;
+        }
+    }
+
+    .pi-laughing-cow {
+        .project-item-image {
+            background-image: url('/src/media/projects/thumbnail-laughing-cow.png');
+        }
+    }
+    
+    .pi-design-central {
+        .project-item-image {
+            background-image: url('/src/media/projects/thumbnail-design-central.png');
+        }
+    }
+
+    .pi-tribute {
+        .project-item-image {
+            background-image: url('/src/media/projects/thumbnail-tribute.png');
+        }
+    }
+}
+
+.project-details {
+    max-width: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    line-height: 1;
+
+    &_number {
+        display: inline;
+        font-size: 100px;
+        color: $gray-light;
+        position: absolute;
+        top: -107px;
+        left: -129px;
+        line-height: 1;
+
+        &:before {
+            //content: '';
+            height: 100%;
+            width: 100%;
+            display: inline-block;
+            position: absolute;
+            background-color: $gray-light;
+        }
+    }
+
+    &_info-icon {
+        margin: 10px 0;
+    }
+
+    &_title {
+        font-size: 80px;
+        line-height: .9;
+        position: relative;
+        float: left;
+        clear: both;
+        margin-bottom: 13px;
+
+        &:before {
+            //content: '';
+            height: 100%;
+            width: 100%;
+            display: inline-block;
+            position: absolute;
+            background-color: rgba(255, 255, 255, 1);
+        }
+    }
+
+    &_link {
+        display: inline-block;
+        position: relative;
+        float: left;
+        clear: both;
+
+        &:before {
+            //content: '';
+            height: 100%;
+            width: 100%;
+            display: inline-block;
+            position: absolute;
+            background-color: $gray-light;
+        }
+    }
+
+    &_info {
+        float: left;
+        clear: both;
+    }
+
+    &_accent {
+        position: absolute;
+        z-index: -1;
+    }
+
+    &_description {
+        p {
+            position: relative;
+            
+            &:before {
+                //content: '';
+                height: 100%;
+                width: 100%;
+                display: inline-block;
+                position: absolute;
+                background-color: $gray-light;
+            }
+        }
+    }
+}
+
+.laughingcow {
+    .project-details_accent {
+        background: linear-gradient(to right, #1e5799 0%,#ff4949 100%);
+        right: -59px;
+        top: -76px;
+        z-index: -1;
+        width: 270px;
+        height: 130px;
+    }
+}
+
+.designcentral {
+    .project-details_accent {
+        background: linear-gradient(to right, rgba(68,68,68,1) 0%,rgba(203,220,65,1) 100%);
+        right: -59px;
+        top: -76px;
+        z-index: -1;
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+    }
+}
+
+.tribute {
+    .project-details_accent {
+        border: 2px solid #d8b75a;
+        opacity: .5;
+        width: 170px;
+        height: 230px;
+        right: -30px;
+        top: -76px;
+    }
+}
+
+.ideafoundry {
+    .project-details_accent {
+        -webkit-clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+        clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+        background: linear-gradient(to right, rgba(248,80,50,1) 0%, rgba(63,185,188,1) 100%);
+        width: 230px;
+        height: 230px;
+        right: 0;
+        top: -100px;
+    }
+}
+
+.additional {
+    width: 100%;
+    max-width: 1000px;
+    margin: 60px auto 0;
+}

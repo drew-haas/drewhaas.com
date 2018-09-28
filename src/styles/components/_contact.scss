@@ -1,0 +1,89 @@
+// Contact Section
+.section-contact {
+    position: relative;
+
+    .copy {
+        h2, p {
+            line-height: 1;
+        }
+    }
+
+    .sign-off {
+        margin: 60px 0 100px;
+        max-width: 600px;
+    }
+}
+
+.social {
+    text-align: center;
+
+    @media screen and (max-width: 580px) {
+        top: auto;
+        bottom: 20px;
+        transform: translate(-50%, 0);
+    }
+
+    .icons {
+        padding: 0 20px;
+        display: inline-block;
+    }
+
+    .icon {
+        width: 30px;
+        height: 30px;
+        display: inline-block;
+        margin-right: 15px;
+
+        &:last-of-type {
+            margin-right: 0;
+        }
+
+        &:hover {
+            path {
+                fill: #fff;
+                transition: fill .3s;
+            }
+        }
+
+        svg {
+            width: 80%;
+            height: 80%;
+        }
+
+        path {
+            fill: $gray-light;
+            transition: fill .3s;
+        }
+    }
+
+    .color-block {
+        width: 20px;
+        height: 40px;
+        display: inline-block;
+    }
+
+    .gray { background-color: #ccc; }
+    .yellow { background-color: #FEFE1A; }
+    .teal { background-color: #0BFFFF; }
+    .green { background-color: #14FA13; }
+    .pink { background-color: #F525F3; }
+    .red { background-color: #DE0301; }
+    .blue { background-color: #0404DE; }
+    .black { background-color: #000; }
+    .white { background-color: #eee; }
+    .grey1 { background-color: #eee; }
+    .grey2 { background-color: #ddd; }
+    .grey3 { background-color: #ccc; }
+    .grey4 { background-color: #bbb; }
+    .grey5 { background-color: #aaa; }
+    .grey6 { background-color: #999; }
+    .grey7 { background-color: #888; }
+    .grey8 { background-color: #777; }
+    .grey9 { background-color: #666; }
+    .grey10 { background-color: #555; }
+    .grey11 { background-color: #444; }
+    .grey12 { background-color: #333; }
+    .grey13 { background-color: #222; }
+    .grey14 { background-color: #111; }
+    .grey15 { background-color: #000; }
+}

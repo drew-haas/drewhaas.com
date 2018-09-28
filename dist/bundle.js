@@ -43,12 +43,39 @@ var Global = function () {
 		key: 'init',
 		value: function init() {
 			this.ga.init();
-			this.fullpage();
+			//this.scrollTriggers();
+			this.menu();
 		}
 	}, {
-		key: 'fullpage',
-		value: function fullpage() {
-			console.log('init fp');
+		key: 'scrollTriggers',
+		value: function scrollTriggers() {
+			/* console.log('scroll triggers');
+   	var controller = new ScrollMagic.Controller({addIndicators: true});
+   var tlServices = new TimelineMax();
+   var tween2 = tlServices.staggerFrom($('.fade-up-2'), 1, {y: 40, opacity: 0, ease: Expo.easeOut}, 0.2);
+   
+   var scene = new ScrollMagic.Scene({
+   	triggerElement: '#laughingcow'
+   })
+   .setClassToggle('#laughingcow', 'active')
+   .addTo(controller); */
+		}
+	}, {
+		key: 'menu',
+		value: function menu() {
+			var count = 0;
+
+			$('.menu-icon').click(function () {
+				if (count % 2) {
+					// close
+					$('.menu').removeClass('open');
+				} else {
+					// open
+					$('.menu').addClass('open');
+				}
+
+				count += 1;
+			});
 		}
 	}]);
 
