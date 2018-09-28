@@ -399,9 +399,7 @@ section {
   position: relative;
   display: block;
   overflow: auto;
-  margin-bottom: 60px; }
-  section:last-of-type {
-    margin-bottom: 0; }
+  margin: 200px 0; }
 
 .menu {
   position: fixed;
@@ -454,7 +452,6 @@ section {
 
 .fp-section {
   width: 100%;
-  height: 100vh;
   overflow: visible; }
   @media screen and (max-height: 500px) {
     .fp-section {
@@ -465,7 +462,7 @@ section {
 .section-portfolio, .section-contact {
   padding: 0 20px; }
 
-.section-broken-tv {
+.hero-section {
   overflow-x: hidden;
   height: auto;
   /* .tv-container {
@@ -536,7 +533,7 @@ section {
         .grey14 { background-color: #111; }
         .grey15 { background-color: #000; }
     } */ }
-  .section-broken-tv h1 {
+  .hero-section h1 {
     font-size: 30vw;
     color: #212121;
     line-height: 1;
@@ -553,11 +550,11 @@ section {
     /* IE 10  */
     -o-user-select: none;
     user-select: none; }
-    .section-broken-tv h1 span.drew {
+    .hero-section h1 span.drew {
       padding-right: 5.5%; }
-    .section-broken-tv h1 span.haas {
+    .hero-section h1 span.haas {
       padding-left: 1%; }
-  .section-broken-tv h2 {
+  .hero-section h2 {
     max-width: 500px;
     width: 100%; }
 
@@ -654,20 +651,15 @@ section {
 
 .project-details {
   max-width: 50%;
-  position: absolute;
-  top: 50%;
+  position: relative;
   left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-      -ms-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
   line-height: 1; }
   .project-details_number {
-    display: inline;
     font-size: 100px;
     color: #4A4A4A;
-    position: absolute;
-    top: -107px;
-    left: -129px;
     line-height: 1; }
     .project-details_number:before {
       height: 100%;
@@ -681,8 +673,6 @@ section {
     font-size: 80px;
     line-height: .9;
     position: relative;
-    float: left;
-    clear: both;
     margin-bottom: 13px; }
     .project-details_title:before {
       height: 100%;
@@ -692,29 +682,26 @@ section {
       background-color: white; }
   .project-details_link {
     display: inline-block;
-    position: relative;
-    float: left;
-    clear: both; }
+    position: relative; }
     .project-details_link:before {
       height: 100%;
       width: 100%;
       display: inline-block;
       position: absolute;
       background-color: #4A4A4A; }
-  .project-details_info {
-    float: left;
-    clear: both; }
   .project-details_accent {
     position: absolute;
     z-index: -1; }
-  .project-details_description p {
-    position: relative; }
-    .project-details_description p:before {
-      height: 100%;
-      width: 100%;
-      display: inline-block;
-      position: absolute;
-      background-color: #4A4A4A; }
+  .project-details_description {
+    line-height: 1.5; }
+    .project-details_description p {
+      position: relative; }
+      .project-details_description p:before {
+        height: 100%;
+        width: 100%;
+        display: inline-block;
+        position: absolute;
+        background-color: #4A4A4A; }
 
 .laughingcow .project-details_accent {
   background: -webkit-gradient(linear, left top, right top, from(#1e5799), to(#ff4949));

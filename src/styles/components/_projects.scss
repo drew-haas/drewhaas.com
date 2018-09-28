@@ -113,19 +113,14 @@
 
 .project-details {
     max-width: 50%;
-    position: absolute;
-    top: 50%;
+    position: relative;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translateX(-50%);
     line-height: 1;
 
     &_number {
-        display: inline;
         font-size: 100px;
         color: $gray-light;
-        position: absolute;
-        top: -107px;
-        left: -129px;
         line-height: 1;
 
         &:before {
@@ -146,8 +141,6 @@
         font-size: 80px;
         line-height: .9;
         position: relative;
-        float: left;
-        clear: both;
         margin-bottom: 13px;
 
         &:before {
@@ -163,8 +156,6 @@
     &_link {
         display: inline-block;
         position: relative;
-        float: left;
-        clear: both;
 
         &:before {
             //content: '';
@@ -176,17 +167,14 @@
         }
     }
 
-    &_info {
-        float: left;
-        clear: both;
-    }
-
     &_accent {
         position: absolute;
         z-index: -1;
     }
 
     &_description {
+        line-height: 1.5;
+
         p {
             position: relative;
             
