@@ -597,6 +597,61 @@ section {
   .project-grid .pi-tribute .project-item-image {
     background-image: url("/src/media/projects/thumbnail-tribute.png"); }
 
+.portfolio-item {
+  /* .project-details_accent, .project-details_number, .project-details_title, .project-details_link, .project-details_info-icon, .project-details_description {
+        opacity: 0;
+        transform: translateY(20px);
+        transition: .4s ease-out;
+    }
+
+    .project-details_title {
+        transition-delay: .2s;
+    }
+
+    .project-details_link {
+        transition-delay: .4s;
+    }
+
+    .project-details_info-icon {
+        transition-delay: .6s;
+    }
+
+    .project-details_description {
+        transition-delay: .8s;
+    }
+
+    .project-details_accent {
+        transition-delay: .9s;
+    }
+
+    &.active {
+        .project-details_accent, .project-details_number, .project-details_title, .project-details_link, .project-details_info-icon, .project-details_description {
+            opacity: 1;
+            transform: translateY(0);
+            transition: .4s ease-out;
+        }
+
+        .project-details_title {
+            transition-delay: .2s;
+        }
+    
+        .project-details_link {
+            transition-delay: .4s;
+        }
+    
+        .project-details_info-icon {
+            transition-delay: .6s;
+        }
+    
+        .project-details_description {
+            transition-delay: .8s;
+        }
+    
+        .project-details_accent {
+            transition-delay: .9s;
+        }
+    } */ }
+
 .project-details {
   max-width: 50%;
   position: absolute;
