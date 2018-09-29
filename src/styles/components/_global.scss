@@ -186,6 +186,18 @@ section {
 .hero-section {
     height: auto;
     margin: 0 0 240px 0;
+
+    .pictures {
+        width: 270px;
+        height: 270px;
+        border-radius: 50%;
+        border: 5px solid $gray-lighter;
+        margin: -160px auto 0;
+        background-image: url('/src/img/drew-yosemite.jpg');
+        background-size: contain;
+        z-index: 1;
+        position: relative;
+    }
     
     h1 {
         font-size: 30vw;
@@ -219,7 +231,7 @@ section {
     h2 {
         max-width: 500px;
         width: 100%;
-        margin: 60px auto 0;
+        margin: 40px auto 0;
         text-align: center;
         display: inherit;
     }

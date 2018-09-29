@@ -576,6 +576,16 @@ section {
         .grey14 { background-color: #111; }
         .grey15 { background-color: #000; }
     } */ }
+  .hero-section .pictures {
+    width: 270px;
+    height: 270px;
+    border-radius: 50%;
+    border: 5px solid #aaa;
+    margin: -160px auto 0;
+    background-image: url("/src/img/drew-yosemite.jpg");
+    background-size: contain;
+    z-index: 1;
+    position: relative; }
   .hero-section h1 {
     font-size: 30vw;
     color: #212121;
@@ -605,7 +615,7 @@ section {
   .hero-section h2 {
     max-width: 500px;
     width: 100%;
-    margin: 60px auto 0;
+    margin: 40px auto 0;
     text-align: center;
     display: inherit; }
 
