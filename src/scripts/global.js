@@ -7,6 +7,7 @@ class Global {
 		this.ga.init();
 		this.scrollTriggers();
 		this.menu();
+		this.parallaxText();
 	}
 
 	scrollTriggers() {
@@ -39,6 +40,98 @@ class Global {
 			}
 
 			count += 1;
+		});
+	}
+
+	parallaxText() {
+		var prlxDuration = $(window).height();
+		var controller = new ScrollMagic.Controller();
+
+		$('.hero-section h1').blast({
+			delimiter: 'character',
+			customClass: 'letter',
+			generateIndexID: true
+		});
+
+		var scene1 = new ScrollMagic.Scene({
+			duration: prlxDuration,
+			triggerElement: 'body',
+			triggerHook: 0
+		})
+		.addTo(controller)
+		.on('progress', function(e) {
+			TweenMax.to($('#letter-0'), 3, {y: e.progress * 50, ease: Expo.easeOut});
+		});
+
+		var scene2 = new ScrollMagic.Scene({
+			duration: prlxDuration,
+			triggerElement: 'body',
+			triggerHook: 0
+		})
+		.addTo(controller)
+		.on('progress', function(e) {
+			TweenMax.to($('#letter-1'), 3, {y: e.progress * 300, ease: Expo.easeOut});
+		});
+
+		var scene3 = new ScrollMagic.Scene({
+			duration: prlxDuration,
+			triggerElement: 'body',
+			triggerHook: 0
+		})
+		.addTo(controller)
+		.on('progress', function(e) {
+			TweenMax.to($('#letter-2'), 3, {y: e.progress * 80, ease: Expo.easeOut});
+		});
+
+		var scene4 = new ScrollMagic.Scene({
+			duration: prlxDuration,
+			triggerElement: 'body',
+			triggerHook: 0
+		})
+		.addTo(controller)
+		.on('progress', function(e) {
+			TweenMax.to($('#letter-3'), 3, {y: e.progress * 160, ease: Expo.easeOut});
+		});
+
+		var scene5 = new ScrollMagic.Scene({
+			duration: prlxDuration,
+			triggerElement: 'body',
+			triggerHook: 0
+		})
+		.addTo(controller)
+		
+		.on('progress', function(e) {
+			TweenMax.to($('#letter-4'), 3, {y: e.progress * 120, ease: Expo.easeOut});
+		});
+
+		var scene6 = new ScrollMagic.Scene({
+			duration: prlxDuration,
+			triggerElement: 'body',
+			triggerHook: 0
+		})
+		.addTo(controller)
+		.on('progress', function(e) {
+			TweenMax.to($('#letter-5'), 3, {y: e.progress * 100, ease: Expo.easeOut});
+		});
+
+		var scene7 = new ScrollMagic.Scene({
+			duration: prlxDuration,
+			triggerElement: 'body',
+			triggerHook: 0
+		})
+		.addTo(controller)
+		.on('progress', function(e) {
+			TweenMax.to($('#letter-6'), 3, {y: e.progress * 240, ease: Expo.easeOut});
+		});
+
+		var scene8 = new ScrollMagic.Scene({
+			duration: prlxDuration,
+			triggerElement: 'body',
+			triggerHook: 0
+		})
+		.addTo(controller)
+		.on('progress', function(e) {
+			TweenMax.to($('#letter-'), 3, {y: e.progress * 200, ease: Expo.easeOut});
 		});
 	}
 }

@@ -22,8 +22,12 @@ h1, .h1-style {
     font-size: 80px;
     letter-spacing: 2px;
     line-height: 1;
-    //font-style: italic;
     text-transform: uppercase;
+    white-space: nowrap;
+
+    .blast {
+        display: inline-block;
+    }
 }
 
 h2 {
@@ -129,9 +133,9 @@ section {
         font-size: 21px;
         pointer-events: none;
         -webkit-touch-callout: none;
-        -webkit-user-select: none; /* Webkit */
-        -moz-user-select: none;    /* Firefox */
-        -ms-user-select: none;     /* IE 10  */
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
         -o-user-select: none;
         user-select: none;
         transition: opacity .3s;
@@ -175,11 +179,9 @@ section {
     padding: 0 $gutter-sm;
 }
 
-// TODO: rename if not using anymore
 .hero-section {
-    overflow-x: hidden;
     height: auto;
-    margin: 0;
+    margin: 0 0 240px 0;
     
     h1 {
         font-size: 30vw;
@@ -188,9 +190,9 @@ section {
         transform: translate(-32px, -47px);
         pointer-events: none;
         -webkit-touch-callout: none;
-        -webkit-user-select: none; /* Webkit */
-        -moz-user-select: none;    /* Firefox */
-        -ms-user-select: none;     /* IE 10  */
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
         -o-user-select: none;
         user-select: none;
 
@@ -206,7 +208,7 @@ section {
     h2 {
         max-width: 500px;
         width: 100%;
-        margin: 0 auto;
+        margin: 60px auto 0;
         text-align: center;
         display: inherit;
     }
@@ -279,4 +281,9 @@ section {
         .grey14 { background-color: #111; }
         .grey15 { background-color: #000; }
     } */
+}
+
+footer {
+    background-color: #212121;
+    padding: 20px 0;
 }

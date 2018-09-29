@@ -29,8 +29,8 @@
     }
 
     .icon {
-        width: 30px;
-        height: 30px;
+        width: 28px;
+        height: 29px;
         display: inline-block;
         margin-right: 15px;
 
@@ -48,6 +48,9 @@
         svg {
             width: 80%;
             height: 80%;
+            position: relative;
+            top: 50%;
+            transform: translateY(-50%);
         }
 
         path {
@@ -61,29 +64,4 @@
         height: 40px;
         display: inline-block;
     }
-
-    .gray { background-color: #ccc; }
-    .yellow { background-color: #FEFE1A; }
-    .teal { background-color: #0BFFFF; }
-    .green { background-color: #14FA13; }
-    .pink { background-color: #F525F3; }
-    .red { background-color: #DE0301; }
-    .blue { background-color: #0404DE; }
-    .black { background-color: #000; }
-    .white { background-color: #eee; }
-    .grey1 { background-color: #eee; }
-    .grey2 { background-color: #ddd; }
-    .grey3 { background-color: #ccc; }
-    .grey4 { background-color: #bbb; }
-    .grey5 { background-color: #aaa; }
-    .grey6 { background-color: #999; }
-    .grey7 { background-color: #888; }
-    .grey8 { background-color: #777; }
-    .grey9 { background-color: #666; }
-    .grey10 { background-color: #555; }
-    .grey11 { background-color: #444; }
-    .grey12 { background-color: #333; }
-    .grey13 { background-color: #222; }
-    .grey14 { background-color: #111; }
-    .grey15 { background-color: #000; }
 }
