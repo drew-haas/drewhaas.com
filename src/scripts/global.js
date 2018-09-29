@@ -4,13 +4,18 @@ class Global {
 	}
 
 	init() {
+		var windowWidth = $(window).width();
+
 		this.ga.init();
-		this.scrollTriggers();
+		this.projectAnimations();
 		this.menu();
-		this.parallaxText();
+
+		if (windowWidth >= 768) {
+			this.parallaxText();
+		}
 	}
 
-	scrollTriggers() {
+	projectAnimations() {
 		var controller = new ScrollMagic.Controller();
 
 		$('.portfolio-item').each(function() {

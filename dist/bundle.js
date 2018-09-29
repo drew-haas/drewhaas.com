@@ -14,7 +14,7 @@ var GoogleAnalytics = function () {
 	_createClass(GoogleAnalytics, [{
 		key: 'init',
 		value: function init() {
-			console.info('Initing Google Analytics with ID: ' + this.id);
+			//console.info(`Initing Google Analytics with ID: ${this.id}`);
 			window.dataLayer = window.dataLayer || [];
 			function gtag() {
 				dataLayer.push(arguments);
@@ -42,14 +42,19 @@ var Global = function () {
 	_createClass(Global, [{
 		key: 'init',
 		value: function init() {
+			var windowWidth = $(window).width();
+
 			this.ga.init();
-			this.scrollTriggers();
+			this.projectAnimations();
 			this.menu();
-			this.parallaxText();
+
+			if (windowWidth >= 768) {
+				this.parallaxText();
+			}
 		}
 	}, {
-		key: 'scrollTriggers',
-		value: function scrollTriggers() {
+		key: 'projectAnimations',
+		value: function projectAnimations() {
 			var controller = new ScrollMagic.Controller();
 
 			$('.portfolio-item').each(function () {

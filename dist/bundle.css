@@ -377,6 +377,9 @@ h1, .h1-style {
   line-height: 1;
   text-transform: uppercase;
   white-space: nowrap; }
+  @media screen and (max-width: 767px) {
+    h1, .h1-style {
+      white-space: inherit; } }
   h1 .blast, .h1-style .blast {
     display: inline-block; }
 
@@ -587,6 +590,14 @@ section {
     -ms-user-select: none;
     -o-user-select: none;
     user-select: none; }
+    @media screen and (max-width: 767px) {
+      .hero-section h1 {
+        font-size: 90px;
+        line-height: 0.8;
+        -webkit-transform: translate(0, 0);
+            -ms-transform: translate(0, 0);
+                transform: translate(0, 0);
+        max-width: 300px; } }
     .hero-section h1 span.drew {
       padding-right: 5.5%; }
     .hero-section h1 span.haas {
