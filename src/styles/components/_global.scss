@@ -53,6 +53,11 @@ section {
     margin: 200px 0;
 }
 
+.fade-up {
+    opacity: 0;
+    transform: translateY(20px);
+}
+
 .menu {
     position: fixed;
     right: 0;
@@ -64,6 +69,18 @@ section {
     &.open {
         .menu-navigation {
             display: block;
+        }
+
+        .dh {
+            opacity: 0;
+        }
+
+        .lines {
+            opacity: 1;
+
+            .line-1, .line-3 {
+                opacity: 0;
+            }
         }
     }
 
@@ -89,14 +106,26 @@ section {
     top: 0;
     cursor: pointer;
 
+    &:hover {
+        .dh {
+            opacity: 0;
+            transition: opacity .3s;
+        }
+
+        .lines {
+            opacity: 1;
+            transition: opacity .3s;
+        }
+    }
+
     .dh {
         transform: translate(-50%, -50%);
         position: relative;
         top: 50%;
+        left: 50%;
         text-align: center;
         width: 100%;
         display: block;
-        left: 50%;
         font-size: 21px;
         pointer-events: none;
         -webkit-touch-callout: none;
@@ -105,6 +134,28 @@ section {
         -ms-user-select: none;     /* IE 10  */
         -o-user-select: none;
         user-select: none;
+        transition: opacity .3s;
+    }
+
+    .lines {
+        position: absolute;
+        transform: translate(-50%, -50%);
+        top: 50%;
+        left: 50%;
+        overflow: auto;
+        opacity: 0;
+        transition: opacity .3s;
+    }
+
+    .line {
+        width: 23px;
+        height: 1px;
+        background: #fff;
+        margin-bottom: 5px;
+
+        &:last-of-type {
+            margin-bottom: 0;
+        }
     }
 }
 
@@ -155,6 +206,9 @@ section {
     h2 {
         max-width: 500px;
         width: 100%;
+        margin: 0 auto;
+        text-align: center;
+        display: inherit;
     }
 
     /* .tv-container {

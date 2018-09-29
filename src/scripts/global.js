@@ -10,45 +10,20 @@ class Global {
 	}
 
 	scrollTriggers() {
-		var controller = new ScrollMagic.Controller({addIndicators: true});		
-		
-		// TODO figure out the trigger hook issue
-		/* $('.portfolio-item').each(function() {
-			console.log($(this));
+		var controller = new ScrollMagic.Controller();
+
+		$('.portfolio-item').each(function() {
+			var id = $(this).attr('id');
+			var tl = new TimelineMax();
+			tl.staggerTo($(this).find('.fade-up'), 1, {opacity: 1, y: 0, ease: Power4.easeOut}, .1);
+
 			var scene = new ScrollMagic.Scene({
-				triggerElement: $(this)
+				triggerElement: '#' + id,
+				triggerHook: .7
 			})
-			.setClassToggle($(this).attr('id'), 'active')
+			.setTween(tl)
 			.addTo(controller);
-		}); */
-
-		/* var scene2 = new ScrollMagic.Scene({
-			triggerElement: '#laughingcow',
-			triggerHook: .1
-		})
-		.setClassToggle('#laughingcow', 'active')
-		.addTo(controller); */
-
-		/* var scene3 = new ScrollMagic.Scene({
-			triggerElement: '#designcentral',
-			triggerHook: .1
-		})
-		.setClassToggle('#designcentral', 'active')
-		.addTo(controller);
-
-		var scene4 = new ScrollMagic.Scene({
-			triggerElement: '#tribute',
-			triggerHook: .1
-		})
-		.setClassToggle('#tribute', 'active')
-		.addTo(controller);
-
-		var scene5 = new ScrollMagic.Scene({
-			triggerElement: '#ideafoundry',
-			triggerHook: .1
-		})
-		.setClassToggle('#ideafoundry', 'active')
-		.addTo(controller); */
+		});
 	}
 
 	menu() {

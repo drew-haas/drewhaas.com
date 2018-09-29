@@ -34,7 +34,7 @@ const config = {
 			'node_modules/jquery/dist/jquery.js',
 			'./src/scripts/ScrollMagic.min.js',
 			'./src/scripts/debug.addindicators.min.js',
-			'./src/scripts/TimelineMax.min.js'
+			'./src/scripts/animation.gsap.min.js'
 		],
 		destination: './dist'
 	},
