@@ -10,11 +10,7 @@ class Global {
 	}
 
 	scrollTriggers() {
-		//console.log('scroll triggers');
-
-		var controller = new ScrollMagic.Controller({addIndicators: true});
-		// var tlServices = new TimelineMax();
-		//var tween2 = tlServices.staggerFrom($('.fade-up-2'), 1, {y: 40, opacity: 0, ease: Expo.easeOut}, 0.2);
+		var controller = new ScrollMagic.Controller({addIndicators: true});		
 		
 		// TODO figure out the trigger hook issue
 		/* $('.portfolio-item').each(function() {
