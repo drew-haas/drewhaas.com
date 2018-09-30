@@ -582,8 +582,9 @@ section {
     border-radius: 50%;
     border: 5px solid #aaa;
     margin: -160px auto 0;
-    background-image: url("/src/img/drew-yosemite.jpg");
-    background-size: contain;
+    background-image: url("https://drew-haas.github.io/drewhaas.com/src/img/drew-yosemite.jpg");
+    background-size: cover;
+    background-position: bottom;
     z-index: 1;
     position: relative; }
   .hero-section h1 {
