@@ -1,9 +1,19 @@
 .project-details {
-    max-width: 50%;
+    width: 50%;
+    max-width: 600px;
     position: relative;
     left: 50%;
     transform: translateX(-50%);
     line-height: 1;
+
+    @media screen and (max-width: $screen-sm) {
+        width: 80%;
+    }
+    
+    @media screen and (max-width: $screen-xs) {
+        width: 100%;
+        padding: 0 5%;
+    }
 
     &_number {
         font-size: 40px;
@@ -30,6 +40,10 @@
         line-height: .9;
         position: relative;
         margin-bottom: 13px;
+
+        @media screen and (max-width: $screen-xs) {
+            font-size: 30px;
+        }
 
         &:before {
             //content: '';
@@ -58,10 +72,18 @@
     &_accent {
         position: absolute;
         z-index: -1;
+
+        @media screen and (max-width: $screen-xs) {
+            transform: scale(0.5);
+        }
     }
 
     &_description {
         line-height: 1.5;
+
+        @media screen and (max-width: $screen-xs) {
+            font-size: 14px;
+        }
 
         p {
             position: relative;

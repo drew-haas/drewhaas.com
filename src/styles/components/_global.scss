@@ -25,7 +25,7 @@ h1, .h1-style {
     text-transform: uppercase;
     white-space: nowrap;
 
-    @media screen and (max-width: $screen-sm) {
+    @media screen and (max-width: $screen-xs) {
         white-space: inherit;
     }
 
@@ -40,6 +40,10 @@ h2 {
     text-transform: uppercase;
     padding: 0 20px;
     display: inline-block;
+
+    @media screen and (max-width: $screen-sm) {
+        font-size: 16px;
+    }
 }
 
 a {
@@ -59,6 +63,11 @@ section {
     display: block;
     overflow: auto;
     margin: 200px 0;
+    overflow-x: hidden;
+
+    @media screen and (max-width: $screen-xs) {
+        margin: 100px 0;
+    }
 }
 
 .fade-up {
@@ -172,20 +181,29 @@ section {
     width: 100%;
     overflow: visible;
 
-    @media screen and (max-height: 500px) {
+    @media screen and (max-height: $screen-xs) {
         height: auto;
         min-height: 500px;
         margin-bottom: 100px;
     }
 }
 
-.section-portfolio, .section-contact {
-    padding: 0 $gutter-sm;
+.portfolio-item {
+    h2 {
+        @media screen and (max-height: $screen-xs) {
+            margin-bottom: 40px;
+        }
+    }
 }
 
 .hero-section {
     height: auto;
     margin: 0 0 240px 0;
+    overflow-x: hidden;
+
+    @media screen and (max-width: $screen-xs) {
+        margin-bottom: 0;
+    }
 
     .pictures {
         width: 270px;
@@ -198,6 +216,12 @@ section {
         background-position: bottom;
         z-index: 1;
         position: relative;
+
+        @media screen and (max-width: $screen-sm) {
+            margin: -30px auto 0;
+            width: 200px;
+            height: 200px;
+        }
     }
     
     h1 {
@@ -213,8 +237,8 @@ section {
         -o-user-select: none;
         user-select: none;
 
-        @media screen and (max-width: $screen-sm) {
-            font-size: 90px;
+        @media screen and (max-width: 500px) {
+            font-size: 8rem;
             line-height: 0.8;
             transform: translate(0, 0);
             max-width: 300px;
@@ -235,6 +259,10 @@ section {
         margin: 40px auto 0;
         text-align: center;
         display: inherit;
+
+        @media screen and (max-width: $screen-sm) {
+            margin: 26px auto 0;
+        }
     }
 
     /* .tv-container {

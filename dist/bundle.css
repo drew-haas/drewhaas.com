@@ -377,7 +377,7 @@ h1, .h1-style {
   line-height: 1;
   text-transform: uppercase;
   white-space: nowrap; }
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 500px) {
     h1, .h1-style {
       white-space: inherit; } }
   h1 .blast, .h1-style .blast {
@@ -389,6 +389,9 @@ h2 {
   text-transform: uppercase;
   padding: 0 20px;
   display: inline-block; }
+  @media screen and (max-width: 767px) {
+    h2 {
+      font-size: 16px; } }
 
 a {
   color: #4A4A4A;
@@ -405,7 +408,11 @@ section {
   position: relative;
   display: block;
   overflow: auto;
-  margin: 200px 0; }
+  margin: 200px 0;
+  overflow-x: hidden; }
+  @media screen and (max-width: 500px) {
+    section {
+      margin: 100px 0; } }
 
 .fade-up {
   opacity: 0;
@@ -502,12 +509,14 @@ section {
       min-height: 500px;
       margin-bottom: 100px; } }
 
-.section-portfolio, .section-contact {
-  padding: 0 20px; }
+@media screen and (max-height: 500px) {
+  .portfolio-item h2 {
+    margin-bottom: 40px; } }
 
 .hero-section {
   height: auto;
   margin: 0 0 240px 0;
+  overflow-x: hidden;
   /* .tv-container {
         opacity: .8;
         position: relative;
@@ -576,6 +585,9 @@ section {
         .grey14 { background-color: #111; }
         .grey15 { background-color: #000; }
     } */ }
+  @media screen and (max-width: 500px) {
+    .hero-section {
+      margin-bottom: 0; } }
   .hero-section .pictures {
     width: 270px;
     height: 270px;
@@ -587,6 +599,11 @@ section {
     background-position: bottom;
     z-index: 1;
     position: relative; }
+    @media screen and (max-width: 767px) {
+      .hero-section .pictures {
+        margin: -30px auto 0;
+        width: 200px;
+        height: 200px; } }
   .hero-section h1 {
     font-size: 30vw;
     color: #212121;
@@ -601,9 +618,9 @@ section {
     -ms-user-select: none;
     -o-user-select: none;
     user-select: none; }
-    @media screen and (max-width: 767px) {
+    @media screen and (max-width: 500px) {
       .hero-section h1 {
-        font-size: 90px;
+        font-size: 8rem;
         line-height: 0.8;
         -webkit-transform: translate(0, 0);
             -ms-transform: translate(0, 0);
@@ -619,19 +636,30 @@ section {
     margin: 40px auto 0;
     text-align: center;
     display: inherit; }
+    @media screen and (max-width: 767px) {
+      .hero-section h2 {
+        margin: 26px auto 0; } }
 
 footer {
   background-color: #212121;
   padding: 20px 0; }
 
 .project-details {
-  max-width: 50%;
+  width: 50%;
+  max-width: 600px;
   position: relative;
   left: 50%;
   -webkit-transform: translateX(-50%);
       -ms-transform: translateX(-50%);
           transform: translateX(-50%);
   line-height: 1; }
+  @media screen and (max-width: 767px) {
+    .project-details {
+      width: 80%; } }
+  @media screen and (max-width: 500px) {
+    .project-details {
+      width: 100%;
+      padding: 0 5%; } }
   .project-details_number {
     font-size: 40px;
     margin-bottom: 13px;
@@ -650,6 +678,9 @@ footer {
     line-height: .9;
     position: relative;
     margin-bottom: 13px; }
+    @media screen and (max-width: 500px) {
+      .project-details_title {
+        font-size: 30px; } }
     .project-details_title:before {
       height: 100%;
       width: 100%;
@@ -668,8 +699,16 @@ footer {
   .project-details_accent {
     position: absolute;
     z-index: -1; }
+    @media screen and (max-width: 500px) {
+      .project-details_accent {
+        -webkit-transform: scale(0.5);
+            -ms-transform: scale(0.5);
+                transform: scale(0.5); } }
   .project-details_description {
     line-height: 1.5; }
+    @media screen and (max-width: 500px) {
+      .project-details_description {
+        font-size: 14px; } }
     .project-details_description p {
       position: relative; }
       .project-details_description p:before {
@@ -730,13 +769,10 @@ footer {
 
 .social {
   text-align: center; }
-  @media screen and (max-width: 580px) {
+  @media screen and (max-width: 500px) {
     .social {
       top: auto;
-      bottom: 20px;
-      -webkit-transform: translate(-50%, 0);
-          -ms-transform: translate(-50%, 0);
-              transform: translate(-50%, 0); } }
+      bottom: 20px; } }
   .social .icons {
     padding: 0 20px;
     display: inline-block; }

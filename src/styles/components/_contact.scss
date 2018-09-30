@@ -17,10 +17,9 @@
 .social {
     text-align: center;
 
-    @media screen and (max-width: 580px) {
+    @media screen and (max-width: $screen-xs) {
         top: auto;
         bottom: 20px;
-        transform: translate(-50%, 0);
     }
 
     .icons {
