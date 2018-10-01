@@ -352,6 +352,17 @@ template {
   font-weight: normal;
   font-style: normal; }
 
+* {
+  -webkit-overflow-scrolling: touch; }
+
+*::-moz-selection {
+  background-color: #fff;
+  color: #fff; }
+
+*::selection {
+  background-color: #fff;
+  color: #fff; }
+
 body, html {
   height: 100%;
   width: 100%;
@@ -364,14 +375,6 @@ body, html {
   @media screen and (max-width: 767px) {
     body, html {
       overflow-x: hidden; } }
-
-*::-moz-selection {
-  background-color: #fff;
-  color: #fff; }
-
-*::selection {
-  background-color: #fff;
-  color: #fff; }
 
 h1, .h1-style {
   font-family: 'bebas_neuebold';

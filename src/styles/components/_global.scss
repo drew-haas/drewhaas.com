@@ -1,6 +1,15 @@
 // global styles only
 @import url('https://fonts.googleapis.com/css?family=Abel');
 
+* {
+    -webkit-overflow-scrolling: touch;
+}
+
+*::selection {
+    background-color: #fff;
+    color: #fff;
+}
+
 body, html {
     height: 100%;
     width: 100%;
@@ -14,11 +23,6 @@ body, html {
     @media screen and (max-width: $screen-sm) {
         overflow-x: hidden;
     }
-}
-
-*::selection {
-    background-color: #fff;
-    color: #fff;
 }
 
 h1, .h1-style {
