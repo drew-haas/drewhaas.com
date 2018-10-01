@@ -361,6 +361,9 @@ body, html {
   background-color: #262626;
   color: rgba(255, 255, 255, 0.7);
   font-family: 'Abel'; }
+  @media screen and (max-width: 767px) {
+    body, html {
+      overflow-x: hidden; } }
 
 *::-moz-selection {
   background-color: #fff;
@@ -439,6 +442,10 @@ section {
     margin: 0;
     padding: 0;
     list-style-type: none; }
+    .menu ul li {
+      margin-bottom: 5px; }
+      .menu ul li:last-of-type {
+        margin-bottom: 0; }
 
 .menu-navigation {
   background-color: #aaa;
@@ -644,6 +651,10 @@ footer {
   background-color: #212121;
   padding: 20px 0; }
 
+@media screen and (max-width: 500px) {
+  .portfolio-item h2 {
+    margin-bottom: 50px; } }
+
 .project-details {
   width: 50%;
   max-width: 600px;
@@ -754,10 +765,9 @@ footer {
   right: 0;
   top: -100px; }
 
-.additional {
-  width: 100%;
-  max-width: 1000px;
-  margin: 60px auto 0; }
+.additional .project-details_link {
+  display: block;
+  margin-bottom: 5px; }
 
 .section-contact {
   position: relative; }
