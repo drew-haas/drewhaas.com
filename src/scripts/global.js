@@ -9,10 +9,7 @@ class Global {
 		this.ga.init();
 		this.projectAnimations();
 		this.menu();
-
-		if (windowWidth >= 768) {
-			this.parallaxText();
-		}
+		this.parallaxText();
 	}
 
 	projectAnimations() {
