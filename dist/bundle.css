@@ -527,75 +527,7 @@ section {
 .hero-section {
   height: auto;
   margin: 0 0 240px 0;
-  overflow-x: hidden;
-  /* .tv-container {
-        opacity: .8;
-        position: relative;
-        width: calc(100% - 30px);
-        height: calc(100% - 30px);
-        border-radius: 5px;
-        margin: 0 auto;
-        top: 50%;
-        transform: translateY(-50%);
-        overflow: hidden;
-
-        .row {
-            width: 100%;
-            display: flex;
-
-            > div {
-                flex: 1;
-            }
-        }
-
-        .row-1 {
-            height: 68%;
-        }
-
-        .row-2 {
-            height: 8%;
-        }
-
-        .row-3 {
-            height: 12%;
-
-            .left-side {
-                background: linear-gradient(to right, rgba(255,255,255,1) 0%, rgba(181,181,181,1) 42%, rgba(0,0,0,1) 100%);
-            }
-            .right-side {
-                background: linear-gradient(to right, rgba(255,255,255,1) 0%, rgba(181,181,181,1) 42%, rgba(0,0,0,1) 100%);
-            }
-        }
-
-        .row-4 {
-            height: 12%;
-        }
-
-        .gray { background-color: #ccc; }
-        .yellow { background-color: #FEFE1A; }
-        .teal { background-color: #0BFFFF; }
-        .green { background-color: #14FA13; }
-        .pink { background-color: #F525F3; }
-        .red { background-color: #DE0301; }
-        .blue { background-color: #0404DE; }
-        .black { background-color: #000; }
-        .white { background-color: #eee; }
-        .grey1 { background-color: #eee; }
-        .grey2 { background-color: #ddd; }
-        .grey3 { background-color: #ccc; }
-        .grey4 { background-color: #bbb; }
-        .grey5 { background-color: #aaa; }
-        .grey6 { background-color: #999; }
-        .grey7 { background-color: #888; }
-        .grey8 { background-color: #777; }
-        .grey9 { background-color: #666; }
-        .grey10 { background-color: #555; }
-        .grey11 { background-color: #444; }
-        .grey12 { background-color: #333; }
-        .grey13 { background-color: #222; }
-        .grey14 { background-color: #111; }
-        .grey15 { background-color: #000; }
-    } */ }
+  overflow-x: hidden; }
   @media screen and (max-width: 500px) {
     .hero-section {
       margin-bottom: 0; } }
@@ -650,6 +582,89 @@ section {
     @media screen and (max-width: 767px) {
       .hero-section h2 {
         margin: 26px auto 0; } }
+  .hero-section .tv-container {
+    opacity: .8;
+    position: relative;
+    width: calc(100% - 30px);
+    height: calc(100% - 30px);
+    border-radius: 5px;
+    margin: 0 auto;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+            transform: translateY(-50%);
+    overflow: hidden; }
+    .hero-section .tv-container .row {
+      width: 100%;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex; }
+      .hero-section .tv-container .row > div {
+        -webkit-box-flex: 1;
+            -ms-flex: 1;
+                flex: 1; }
+    .hero-section .tv-container .row-1 {
+      height: 68%; }
+    .hero-section .tv-container .row-2 {
+      height: 8%; }
+    .hero-section .tv-container .row-3 {
+      height: 12%; }
+      .hero-section .tv-container .row-3 .left-side {
+        background: -webkit-gradient(linear, left top, right top, from(white), color-stop(42%, #b5b5b5), to(black));
+        background: linear-gradient(to right, white 0%, #b5b5b5 42%, black 100%); }
+      .hero-section .tv-container .row-3 .right-side {
+        background: -webkit-gradient(linear, left top, right top, from(white), color-stop(42%, #b5b5b5), to(black));
+        background: linear-gradient(to right, white 0%, #b5b5b5 42%, black 100%); }
+    .hero-section .tv-container .row-4 {
+      height: 12%; }
+    .hero-section .tv-container .gray {
+      background-color: #ccc; }
+    .hero-section .tv-container .yellow {
+      background-color: #FEFE1A; }
+    .hero-section .tv-container .teal {
+      background-color: #0BFFFF; }
+    .hero-section .tv-container .green {
+      background-color: #14FA13; }
+    .hero-section .tv-container .pink {
+      background-color: #F525F3; }
+    .hero-section .tv-container .red {
+      background-color: #DE0301; }
+    .hero-section .tv-container .blue {
+      background-color: #0404DE; }
+    .hero-section .tv-container .black {
+      background-color: #000; }
+    .hero-section .tv-container .white {
+      background-color: #eee; }
+    .hero-section .tv-container .grey1 {
+      background-color: #eee; }
+    .hero-section .tv-container .grey2 {
+      background-color: #ddd; }
+    .hero-section .tv-container .grey3 {
+      background-color: #ccc; }
+    .hero-section .tv-container .grey4 {
+      background-color: #bbb; }
+    .hero-section .tv-container .grey5 {
+      background-color: #aaa; }
+    .hero-section .tv-container .grey6 {
+      background-color: #999; }
+    .hero-section .tv-container .grey7 {
+      background-color: #888; }
+    .hero-section .tv-container .grey8 {
+      background-color: #777; }
+    .hero-section .tv-container .grey9 {
+      background-color: #666; }
+    .hero-section .tv-container .grey10 {
+      background-color: #555; }
+    .hero-section .tv-container .grey11 {
+      background-color: #444; }
+    .hero-section .tv-container .grey12 {
+      background-color: #333; }
+    .hero-section .tv-container .grey13 {
+      background-color: #222; }
+    .hero-section .tv-container .grey14 {
+      background-color: #111; }
+    .hero-section .tv-container .grey15 {
+      background-color: #000; }
 
 footer {
   background-color: #212121;
