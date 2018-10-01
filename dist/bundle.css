@@ -429,7 +429,8 @@ section {
   top: 0;
   z-index: 1;
   width: 250px;
-  line-height: 1; }
+  line-height: 1;
+  z-index: 99999; }
   .menu.open .menu-navigation {
     display: block; }
   .menu.open .dh {
